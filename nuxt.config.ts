@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       stylistic: {
         indent: 2,
         semi: true,
-        quotes: 'single',
+        quotes: "single",
       },
     },
   },
