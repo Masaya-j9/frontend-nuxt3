@@ -6,11 +6,5 @@ export default withNuxt(
   {
     files: ['**/*.vue', '**/*.ts'],
     ignores: ['**/*.log*', '.cache/**'],
-    rules: {
-      'no-console': 'warn',
-      '@stylistic/semi': ['error', 'always'],
-      '@stylistic/quotes': ['error', 'single'],
-      '@stylistic/indent': ['error', 2],
-    },
   },
 )
