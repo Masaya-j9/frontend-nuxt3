@@ -1,22 +1,13 @@
-// eslint.config.js
-import js from '@eslint/js'
-import vue from 'eslint-plugin-vue'
-import stylistic from '@stylistic/eslint-plugin'
+// @ts-check
+import withNuxt from "./.nuxt/eslint.config.mjs";
 
-export default [
-  js.configs.recommended,
+export default withNuxt(
+  // Your custom configs here
   {
-    files: ['**/*.ts', '**/*.js', '**/*.vue'],
-    plugins: {
-      vue,
-      '@stylistic': stylistic,
-    },
+    files: ["**/*.vue", "**/*.ts"],
+    ignores: ["**/*.log*", ".cache/**"],
     rules: {
-      'no-console': 'warn',
-      '@stylistic/semi': ['error', 'always'],
-      '@stylistic/quotes': ['error', 'single'],
-      '@stylistic/indent': ['error', 2],
-      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      "no-console": "warn",
     },
-  },
-]
+  }
+);
