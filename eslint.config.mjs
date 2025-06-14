@@ -1,5 +1,6 @@
 // @ts-check
 import withNuxt from './.nuxt/eslint.config.mjs';
+import stylistic from '@stylistic/eslint-plugin';
 
 export default withNuxt(
   // Your custom configs here
@@ -8,8 +9,11 @@ export default withNuxt(
     ignores: ['**/*.log*', '.cache/**'],
     rules: {
       'no-console': 'warn',
-      '@stylistic/quotes': 'off',
-      '@stylistic/comma-dangle': 'off',
     },
-  }
+  },
+  stylistic.configs.customize({
+    indent: 2,
+    quotes: 'single',
+    semi: true,
+  })
 );
