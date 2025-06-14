@@ -1,11 +1,7 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-05-15',
+  modules: ['@nuxt/eslint', '@nuxt/test-utils/module'],
   devtools: { enabled: true },
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/test-utils/module'
-  ],
+  compatibilityDate: '2025-05-15',
   eslint: {
     config: {
       stylistic: {
@@ -13,6 +9,6 @@ export default defineNuxtConfig({
         quotes: 'single',
         semi: false,
       },
-    }
-  }
+    },
+  },
 })

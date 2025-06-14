@@ -8,6 +8,6 @@ export default withNuxt(
     ignores: ['**/*.log*', '.cache/**'],
     rules: {
       'no-console': 'warn',
-    }
-  }
+    },
+  },
 )
