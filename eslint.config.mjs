@@ -9,11 +9,13 @@ export default withNuxt(
     ignores: ['**/*.log*', '.cache/**'],
     rules: {
       'no-console': 'warn',
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
     },
   },
   stylistic.configs.customize({
     indent: 2,
     quotes: 'single',
     semi: true,
+    commaDangle: 'always-multiline',
   }),
 );
