@@ -8,6 +8,9 @@ export default withNuxt(
     ignores: ['**/*.log*', '.cache/**'],
     rules: {
       'no-console': 'warn',
+      '@stylistic/semi': ['error', 'always'],
+      '@stylistic/quotes': ['error', 'single'],
+      '@stylistic/indent': ['error', 2],
     },
   },
 )
