@@ -8,6 +8,8 @@ export default withNuxt(
     ignores: ["**/*.log*", ".cache/**"],
     rules: {
       "no-console": "warn",
+      '@stylistic/quotes': 'off',
+      '@stylistic/comma-dangle': 'off',
     },
   }
 );
