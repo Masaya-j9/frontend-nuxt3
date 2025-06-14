@@ -15,5 +15,5 @@ export default withNuxt(
     indent: 2,
     quotes: 'single',
     semi: true,
-  })
+  }),
 );
